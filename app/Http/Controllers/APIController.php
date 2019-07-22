@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
-class YoutubeController extends Controller
+class APIController extends Controller
 {
     public function index() {
-    	echo "Index API from index function of youtubecontroller";
+    	$data = User::all();
+    	return $data;
     }
 }

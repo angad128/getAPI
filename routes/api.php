@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 // My AIP
-Route::get("/","YoutubeController@index");
+Route::get("/","APIController@index");
